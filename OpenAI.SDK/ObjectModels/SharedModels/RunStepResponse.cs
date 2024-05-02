@@ -75,7 +75,7 @@ public record RunStepResponse : BaseResponse, IOpenAiModels.IId, IOpenAiModels.I
     public string Status { get; set; }
 
     [JsonPropertyName("last_error")]
-    public string? LastError { get; set; }
+    public Error? LastError { get; set; }
 
     [JsonPropertyName("step_details")]
     public RunStepDetails? StepDetails { get; set; }
